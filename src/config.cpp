@@ -7,15 +7,15 @@
 void config_set_defaults(OverlayConfig* config) {
     if (!config) return;
     config->enabled = true;
-    config->show_fps = true;
+    config->show_fps = false;
     config->show_cpu_temp = true;
-    config->show_cpu_load = true;
+    config->show_cpu_load = false;
     config->show_all_cores = false;
     config->show_gpu_temp = true;
-    config->show_gpu_load = true;
-    config->show_ram = true;
-    config->show_fan = true;
-    config->background_panel = true;
+    config->show_gpu_load = false;
+    config->show_ram = false;
+    config->show_fan = false;
+    config->background_panel = false;
     config->position = 0;              /* 0 = Top, 1 = Bottom */
     config->font_size = 18;
     config->toast_notifications = false;
