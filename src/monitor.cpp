@@ -379,6 +379,6 @@ void monitor_format_hud_lines(const HardwareMetrics* m, const OverlayConfig* cfg
             
         }
     }
-
+ }
   
         
