@@ -44,7 +44,7 @@ static bool parse_bool(const char* val, bool default_val) {
 
 bool config_load(OverlayConfig* config, const char* filepath) {
     config_set_defaults(config);
-    if (!filepath) return false;
+    if (!filepath) return true;
 
     FILE* fp = fopen(filepath, "r");
     if (!fp) {
